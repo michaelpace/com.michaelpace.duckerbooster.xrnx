@@ -1,6 +1,16 @@
 renoise.tool():add_menu_entry {
-	name = "Main Menu:Tools:duckerbooster",
+	name = "Main Menu:Tools:New duckerbooster",
 	invoke = function() create_new_duckerbooster() end
+}
+
+renoise.tool():add_keybinding {
+	name = "Pattern Editor:Track Control:New duckerbooster",
+	invoke = function(repeated)
+		if (not repeated)
+		then
+			create_new_duckerbooster()
+		end
+	end
 }
 
 function create_new_duckerbooster()
