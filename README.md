@@ -1,5 +1,5 @@
 # Summary
-A plugin for Renoise that creates a group of three groups, configured such that the first group has two Signal Followers which point to the second and third groups. Activity in the first group ducks the second group's volume and boosts the third group's volume.
+A plugin for [Renoise](https://www.renoise.com) that creates a group of three groups, configured such that the first group has two Signal Followers which point to the second and third groups. Activity in the first group ducks the second group's volume and boosts the third group's volume.
 
 # Usage
 `Tools > New duckerbooster`.
