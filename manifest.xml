@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6</ApiVersion>
+  <Id>com.michaelpace.duckerbooster</Id>
+  <Version>1.0</Version>
+  <Author>Michael Pace [mpace1027@gmail.com]</Author>
+  <Name>duckerbooster</Name>
+  <Category>Convenience</Category>
+  <Description>A XRNX tool which creates a new group which itself contains three groups. The first child group has two signal followers on its main out. The first signal follower ducks the second child group, and the second signal follower boosts the third child group.</Description>
+  <Homepage>http://scripting.renoise.com</Homepage>
+  <Platform>Windows, Mac, Linux</Platform>
+</RenoiseScriptingTool>
