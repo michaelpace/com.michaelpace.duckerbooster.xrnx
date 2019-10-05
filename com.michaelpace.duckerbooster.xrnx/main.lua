@@ -54,6 +54,9 @@ function make_ducker(ducked_group, duckerbooster_group)
 	local ducked_gainer = ducked_group:insert_device_at("Audio/Effects/Native/Gainer", 2)
 	local duckerbooster_ducker = duckerbooster_group:insert_device_at("Audio/Effects/Native/*Signal Follower", 2)
 
+	-- set ducker's name to "ducker"
+	duckerbooster_ducker.display_name = "ducker"
+
 	-- set ducker's dest track to ducked group
 	duckerbooster_ducker:parameter(1):record_value(3)
 	-- set ducker's dest device to ducked group's gainer
@@ -72,6 +75,9 @@ function make_booster(boosted_group, duckerbooster_group)
 	-- create booster signal follower and gainer
 	local boosted_gainer = boosted_group:insert_device_at("Audio/Effects/Native/Gainer", 2)
 	local duckerbooster_booster = duckerbooster_group:insert_device_at("Audio/Effects/Native/*Signal Follower", 3)
+
+	-- set booster's name to "booster"
+	duckerbooster_booster.display_name = "booster"
 
 	-- set booster's dest track to boosted group
 	duckerbooster_booster:parameter(1):record_value(5)
