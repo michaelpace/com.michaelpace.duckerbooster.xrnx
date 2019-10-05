@@ -64,6 +64,8 @@ function make_ducker(ducked_group, duckerbooster_group)
 	duckerbooster_ducker:parameter(4):record_value(0.25)
 	-- set ducker's max to -inf
 	duckerbooster_ducker:parameter(5):record_value(0)
+	-- set ducker's sensitivity to 0.5
+	duckerbooster_ducker:parameter(9):record_value(0.5)
 end
 
 function make_booster(boosted_group, duckerbooster_group)
@@ -81,4 +83,6 @@ function make_booster(boosted_group, duckerbooster_group)
 	duckerbooster_booster:parameter(4):record_value(0)
 	-- set booster's max to 0
 	duckerbooster_booster:parameter(5):record_value(0.25)
+	-- set ducker's sensitivity to 0.75
+	duckerbooster_booster:parameter(9):record_value(0.75)
 end
