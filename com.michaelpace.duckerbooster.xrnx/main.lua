@@ -76,6 +76,9 @@ function make_booster(boosted_group, duckerbooster_group)
 	local boosted_gainer = boosted_group:insert_device_at("Audio/Effects/Native/Gainer", 2)
 	local duckerbooster_booster = duckerbooster_group:insert_device_at("Audio/Effects/Native/*Signal Follower", 3)
 
+	-- set the gainer's initial volume to -inf
+	boosted_gainer:parameter(1):record_value(0)
+
 	-- set booster's name to "booster"
 	duckerbooster_booster.display_name = "booster"
 
